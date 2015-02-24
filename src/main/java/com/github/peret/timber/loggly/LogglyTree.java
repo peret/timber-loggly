@@ -20,6 +20,7 @@ import com.github.peret.loggly.LogglyClient;
 import java.lang.String;
 import java.lang.StringBuilder;
 import java.util.HashMap;
+import java.util.Map;
 
 import timber.log.Timber;
 
