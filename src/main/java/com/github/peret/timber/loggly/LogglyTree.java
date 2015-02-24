@@ -70,7 +70,7 @@ public class LogglyTree extends Timber.HollowTree {
 
     public void addDefaultPayload(String key, Object value) {
         defaultPayload.put(key, value.toString());
-        defaultPayloadBuilder.append(String.format("\"%s\": \"%s\", "));
+        defaultPayloadBuilder.append(String.format("\"%s\": \"%s\", ", key, value.toString()));
     }
 
     /**
