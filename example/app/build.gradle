@@ -5,7 +5,7 @@ android {
     buildToolsVersion "21.1.1"
 
     defaultConfig {
-        applicationId "com.github.tony19.timber.loggly.demo"
+        applicationId "com.github.peret.timber.loggly.demo"
         minSdkVersion 21
         targetSdkVersion 21
         versionCode 1
@@ -28,5 +28,5 @@ repositories {
 
 dependencies {
     compile 'com.jakewharton.timber:timber:2.5.1'
-    compile 'com.github.tony19:timber-loggly:1.0.0-SNAPSHOT'
+    compile 'com.github.peret:timber-loggly:1.0.0-SNAPSHOT'
 }

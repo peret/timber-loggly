@@ -13,17 +13,17 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.github.tony19.timber.loggly.demo;
+package com.github.peret.timber.loggly.demo;
 
 import android.app.Application;
 
-import com.github.tony19.timber.loggly.LogglyTree;
+import com.github.peret.timber.loggly.LogglyTree;
 
 import timber.log.Timber;
 
 /**
  * Demonstrates an application that uses <a href="https://github.com/JakeWharton/timber">Timber</a>
- * and <a href="https://github.com/tony19/timber-loggly">LogglyTree</a> to post messages to
+ * and <a href="https://github.com/peret/timber-loggly">LogglyTree</a> to post messages to
  * <a href="http://loggly.com">Loggly</a>, a cloud-based logging service
  */
 public class ExampleApp extends Application {

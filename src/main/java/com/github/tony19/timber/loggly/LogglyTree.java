@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.github.tony19.timber.loggly;
+package com.github.peret.timber.loggly;
 
-import com.github.tony19.loggly.LogglyClient;
+import com.github.peret.loggly.LogglyClient;
 import timber.log.Timber;
 
 /**

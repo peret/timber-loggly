@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.github.tony19.timber.loggly.demo;
+package com.github.peret.timber.loggly.demo;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -21,7 +21,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
-import com.github.tony19.timber.loggly.R;
+import com.github.peret.timber.loggly.R;
 
 import timber.log.Timber;
 

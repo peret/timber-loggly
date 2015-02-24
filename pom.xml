@@ -8,13 +8,13 @@
         <version>7</version>
     </parent>
 
-    <groupId>com.github.tony19</groupId>
+    <groupId>com.github.peret</groupId>
     <artifactId>timber-loggly</artifactId>
     <version>1.0.1-SNAPSHOT</version>
     <name>timber-loggly</name>
     <description>A Timber tree that posts to Loggly</description>
 
-    <url>http://github.com/tony19/timber-loggly</url>
+    <url>http://github.com/peret/timber-loggly</url>
 
     <licenses>
         <license>
@@ -26,21 +26,21 @@
     </licenses>
 
     <scm>
-        <url>https://github.com/tony19/timber-loggly</url>
-        <connection>scm:git@github.com:tony19/timber-loggly.git</connection>
-        <developerConnection>scm:git:git@github.com:tony19/timber-loggly.git</developerConnection>
+        <url>https://github.com/peret/timber-loggly</url>
+        <connection>scm:git@github.com:peret/timber-loggly.git</connection>
+        <developerConnection>scm:git:git@github.com:peret/timber-loggly.git</developerConnection>
     </scm>
     <issueManagement>
         <system>GitHub</system>
-        <url>https://github.com/tony19/timber-loggly/issues</url>
+        <url>https://github.com/peret/timber-loggly/issues</url>
     </issueManagement>
 
     <developers>
         <developer>
-            <id>tony19</id>
+            <id>peret</id>
             <name>Tony Trinh</name>
-            <email>tony19@gmail.com</email>
-            <url>http://tony19.github.com</url>
+            <email>peret@gmail.com</email>
+            <url>http://peret.github.com</url>
         </developer>
     </developers>
 
@@ -51,7 +51,7 @@
             <version>2.5.1</version>
         </dependency>
         <dependency>
-            <groupId>com.github.tony19</groupId>
+            <groupId>com.github.peret</groupId>
             <artifactId>loggly-client</artifactId>
             <version>1.0.2</version>
         </dependency>
