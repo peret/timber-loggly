@@ -16,6 +16,11 @@
 package com.github.peret.timber.loggly;
 
 import com.github.peret.loggly.LogglyClient;
+
+import java.lang.String;
+import java.lang.StringBuilder;
+import java.util.HashMap;
+
 import timber.log.Timber;
 
 /**
@@ -28,6 +33,8 @@ public class LogglyTree extends Timber.HollowTree {
 
     private final LogglyClient loggly;
     private LogglyClient.Callback handler;
+    private Map<String, String> defaultPayload = new HashMap<>();
+    private StringBuilder defaultPayloadBuilder = new StringBuilder();
 
     /** Log severity level */
     private static enum Level {
@@ -58,6 +65,11 @@ public class LogglyTree extends Timber.HollowTree {
                 System.err.println("LogglyTree failed: " + error);
             }
         };
+    }
+
+    public void addDefaultPayload(String key, Object value) {
+        defaultPayload.put(key, value.toString());
+        defaultPayloadBuilder.append(String.format("\"%s\": \"%s\", "));
     }
 
     /**
@@ -131,8 +143,9 @@ public class LogglyTree extends Timber.HollowTree {
      * @return JSON string
      */
     private String toJson(Level level, String message, Object... args) {
-        return String.format("{\"level\": \"%1$s\", \"message\": \"%2$s\"}",
+        return String.format("{\"level\": \"%1$s\", %2$s \"message\": \"%3$s\"}",
                             level,
+                            defaultPayloadBuilder.toString(),
                             String.format(message, args).replace("\"", "\\\""));
     }
 
